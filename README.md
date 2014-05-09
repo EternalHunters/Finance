@@ -7,7 +7,7 @@ Finance
 
 用到的第三方library库
 > [flavienlaurent/datetimepicker](https://github.com/flavienlaurent/datetimepicker)\n
-> [johnkil/Android-AppMsg](https://github.com/johnkil/Android-AppMsg)\n
+> [johnkil/Android-AppMsg](https://github.com/johnkil/Android-AppMsg)<br/>
 > [beworker/pinned-section-listview](https://github.com/beworker/pinned-section-listview)
 > [Androguide/HoloGraphLibrary](https://github.com/Androguide/HoloGraphLibrary)
 > [ai212983/android-spinnerwheel](https://github.com/ai212983/android-spinnerwheel)
