@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" 
+        android:background="#33b5e5" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:drawableLeft="@drawable/selector_nav_back_detail"
+            android:paddingLeft="10dp"
+            android:text="@string/index"
+            android:textColor="@android:color/white"
+            android:onClick="back" />
+
+        <LinearLayout
+            android:id="@+id/ll_tab_titlelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/btn_tab_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_add_tab"
+                android:drawablePadding="-50dp"
+                android:enabled="false"
+                android:padding="5dp"
+                android:gravity="center"
+                android:text="@string/moneyout"
+                android:textColor="@android:color/white" 
+                />
+            <View 
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:background="@android:color/white"
+                />
+
+            <TextView
+                android:id="@+id/btn_tab_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/selector_add_tab"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/moneyin"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="10dp"
+            android:onClick="toDetailView"
+            android:src="@drawable/selector_nav_add_detail_comfirm" />
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_keyboard_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                style="@style/keyboard"
+                android:tag="1"
+                android:text="1" />
+
+            <Button
+                style="@style/keyboard"
+                android:tag="2"
+                android:text="2" />
+
+            <Button
+                style="@style/keyboard"
+                android:tag="3"
+                android:text="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                style="@style/keyboard"
+                android:tag="4"
+                android:text="4" />
+
+            <Button
+                style="@style/keyboard"
+                android:tag="5"
+                android:text="5" />
+
+            <Button
+                style="@style/keyboard"
+                android:tag="6"
+                android:text="6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                style="@style/keyboard"
+                android:tag="7"
+                android:text="7" />
+
+            <Button
+                style="@style/keyboard"
+                android:tag="8"
+                android:text="8" />
+
+            <Button
+                style="@style/keyboard"
+                android:tag="9"
+                android:text="9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                style="@style/keyboard"
+                android:tag="."
+                android:text="." />
+
+            <Button
+                style="@style/keyboard"
+                android:tag="0"
+                android:text="0" />
+
+            <ImageButton
+                style="@style/keyboard"
+                android:tag="del"
+                android:src="@drawable/keyboard_del" />
+        </LinearLayout>
+    </LinearLayout>
+
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rl_title_layout"
+        android:layout_above="@id/ll_keyboard_layout"
+        android:gravity="center_vertical|right">
+        <TextView 
+            android:id="@+id/tv_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textSize="50sp"
+            android:textColor="#ff4444"/>
+        <TextView 
+            android:id="@+id/tv_number_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:text="0"
+            android:ellipsize="none"
+            android:textColor="#ff4444"
+            android:singleLine="true"/>
+    </LinearLayout>
+    
+</RelativeLayout>

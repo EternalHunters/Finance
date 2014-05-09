@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_bg">#eaebea</color>
+    
+    <color name="color_title">#33b5e5</color>
+    <color name="color_divider">#e3e3e3</color>
+    <color name="color_list_divider">#cccccc</color>
+    <color name="color_tab_vertial">#bec3c5</color>
+    
+     <color name="color_text_back_normal">#bec3c5</color>
+     <color name="color_text_back_highlight">#6f7070</color>
+     
+     <color name="custom">#ff0099CC</color>
+    <color name="sticky">#ffffcd5a</color>
+    
+    
+    
+    <color name="header_color_1">#ff99cc00</color>
+    <color name="header_color_2">#ff33b5e5</color>
+    <color name="header_color_3">#ffffbb33</color>
+    <color name="header_color_4">#ffff4444</color>
+</resources>

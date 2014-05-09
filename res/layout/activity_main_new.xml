@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout 
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#33b5e5">
+        
+        <TextView 
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="首页"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"/>
+        
+        
+        <LinearLayout 
+            android:id="@+id/ll_title_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+	        android:layout_centerInParent="true"
+	        android:gravity="center"
+	        android:visibility="gone">
+            <ImageButton 
+                android:id="@+id/ib_calendar_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/calendar_month_left"
+                android:padding="10dp"/>
+            <TextView 
+	            android:id="@+id/tv_calendar_title"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="19sp"
+	            android:textColor="@android:color/white"
+	            android:text="@string/linechart"
+	            />
+             <ImageButton 
+                 android:id="@+id/ib_calendar_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/calendar_month_right"
+                android:padding="10dp"/>
+        </LinearLayout>
+        
+        <ImageButton 
+            android:id="@+id/ib_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selector_set_icon"
+            android:paddingRight="15dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    
+	<android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_below="@id/rl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+
+</RelativeLayout>

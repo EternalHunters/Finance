@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">55记账</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="index">首页</string>
+    <string name="fill_detail">填写详情</string>
+    <string name="input">输入</string>
+    <string name="moneyout">支出</string>
+	<string name="moneyin">收入</string>
+	
+	<string name="back">返回</string>
+	<string name="setting">设置</string>
+	
+	<string name="linechart">曲线图</string>
+	<string name="calendar">日历</string>
+	
+	<string name="fill_time">记录时间:</string>
+	
+	<string name="version">版本:</string>
+	<string name="author">作者:</string>
+	<string name="about">关于</string>
+	
+	<string name="addcustomcategory">添加自定义分类</string>
+	
+	<string name="inputcategoryname">输入分类名</string>
+	<string name="type">类型:</string>
+	<string name="selectcategoryicon">选择分类图标:</string>
+	
+	<string name="setpassword">设置密码</string>
+	<string name="reinputpassword">再输一次密码</string>
+	<string name="inputpassword">请输入密码</string>
+	<string name="inputoldpassword">输入原来的密码</string>
+	<string name="setnewpassword">输入新密码</string>
+	
+	
+	<string name="mybalence">我的余额:</string>
+	
+	<string name="edit">编辑</string>
+	<string name="done">取消</string>
+	<string name="delete">删除</string>
+	<string name="save">保存</string>
+	<string name="addcategory">添加分类</string>
+	<string name="delcategory">删除分类</string>
+	<string name="loding">正在加载</string>
+	
+	<string name="remark">备注:</string>
+	<string name="addremark">添加备注(200字内)</string>
+	<string name="emptycategory">还没有添加自定义分类，点击屏幕添加</string>
+</resources>

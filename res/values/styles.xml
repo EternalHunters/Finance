@@ -1,0 +1,25 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar">
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    
+    <style name="keyboard">
+         <item name="android:layout_width">wrap_content</item>
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:layout_weight">1</item>
+          <item name="android:textSize">45sp</item>
+          <item name="android:textColor">@android:color/white</item>
+         <item name="android:background">@drawable/selector_keyboard</item>
+         <item name="android:onClick">keyboardAction</item>
+    </style>
+    
+     <style name="SelectableItem">
+        <item name="android:background">@android:drawable/list_selector_background</item>
+    </style>
+</resources>

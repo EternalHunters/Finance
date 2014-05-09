@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/date_picker_component_width"
+    android:layout_height="wrap_content"
+    android:background="@color/date_picker_view_animator"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="编辑账单"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="@dimen/date_picker_component_width"
+        android:layout_height="1.0dip"
+        android:background="@color/line_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingBottom="30dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="30dp" >
+
+        <TextView
+            android:id="@+id/tv_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/et_modify_finance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="right"
+            android:inputType="numberDecimal"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/date_picker_component_width"
+        android:layout_height="1.0dip"
+        android:background="@color/line_background" />
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="@dimen/date_picker_component_width"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_delete"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="48dip"
+            android:text="删除"
+            android:textColor="@color/done_text_color"
+            android:textSize="@dimen/done_label_size" />
+
+        <Button
+            android:id="@+id/btn_modify"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="48dip"
+            android:text="修改"
+            android:textColor="@color/done_text_color"
+            android:textSize="@dimen/done_label_size" />
+    </LinearLayout>
+
+</LinearLayout>

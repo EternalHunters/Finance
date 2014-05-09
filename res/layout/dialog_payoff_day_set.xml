@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.lnl.finance"
+    android:layout_width="@dimen/date_picker_component_width"
+    android:layout_height="wrap_content"
+    android:background="@color/date_picker_view_animator"
+    android:gravity="center"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="选择发工资日期"
+        android:textSize="18sp"
+        android:textColor="@android:color/darker_gray"/>
+    
+    <View
+        android:layout_width="@dimen/date_picker_component_width"
+        android:layout_height="1.0dip"
+        android:background="@color/line_background" />
+
+    <antistatic.spinnerwheel.WheelVerticalView
+        android:id="@+id/wvv_day_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:selectionDivider="@drawable/divider_dark_gradient_horizontal"
+        app:selectionDividerActiveAlpha="100"
+        app:selectionDividerDimmedAlpha="255"
+        app:selectionDividerHeight="1px"
+        app:visibleItems="5" 
+        android:padding="20dp"/>
+
+    <View
+        android:layout_width="@dimen/date_picker_component_width"
+        android:layout_height="1.0dip"
+        android:background="@color/line_background" />
+
+    <include layout="@layout/date_picker_done_button" />
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#33b5e5" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:drawableLeft="@drawable/selector_nav_back_detail"
+            android:onClick="back"
+            android:paddingLeft="10dp"
+            android:text="@string/back"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/addcustomcategory"
+            android:textColor="@android:color/white"
+            android:textSize="19sp" />
+        <ImageButton
+            android:id="@+id/ib_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/selector_nav_add_detail_comfirm"
+            android:onClick="saveAction" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/ll_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/type"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_category_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="收入"
+                        android:textSize="15sp" />
+                </LinearLayout>
+              
+
+                <EditText
+                    android:id="@+id/et_category_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/ll_type"
+                    android:background="@null"
+                    android:hint="@string/inputcategoryname" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_divider" />
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/darker_gray"
+                android:text="@string/selectcategoryicon"/>
+			<View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_divider" />
+            <RelativeLayout
+                android:id="@+id/rl_finance_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_divider" />
+            <Button 
+		        android:id="@+id/btn_save_category"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/save"
+		        android:textColor="@color/color_add_button_text"
+		        android:layout_marginLeft="20dp"
+		        android:layout_marginRight="20dp"
+		        android:layout_marginBottom="10dp"
+		        android:layout_marginTop="10dp"
+		        android:background="@drawable/selector_add_button"
+		        />
+        </LinearLayout>
+    </ScrollView>
+	
+</LinearLayout>

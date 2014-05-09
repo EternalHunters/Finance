@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/rl_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#33b5e5" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:drawableLeft="@drawable/selector_nav_back_detail"
+            android:onClick="back"
+            android:paddingLeft="10dp"
+            android:text="@string/back"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/about"
+            android:textColor="@android:color/white"
+            android:textSize="19sp" />
+
+    </RelativeLayout>
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginRight="10dp"
+		    android:textColor="@android:color/darker_gray"
+		    android:text="        “钱包!你怎么了!钱包!你怎么瘦了!钱包钱包!你醒醒啊!!!”“求你，不要减肥，更不要离开我！”“你难道不知道吗，我从来都没有嫌你胖过！总是祈求你永远都不要变瘦，是越胖越好！我喜欢你胖胖的样子！不，是爱，发自肺腑的爱！”"
+		    android:textSize="13sp"/>
+        <TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="@android:color/darker_gray"
+		    android:text="        还在不知不觉的发现钱包痩了，钱还不知道飘到哪里去了发愁吗？快用我快用我，鼓起你的钱包来。\n"
+		    android:layout_marginLeft="10dp"
+		    android:textSize="13sp"/>
+        <TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="告知用户:\n
+因为在发布上一个版本时，手贱直接替换了原有项目素材文件夹，最重要的就是把项目的签名文件搞丢（直接涉及到软件直接更新替换的问题，现在只能通过先删除原有软件然后再进行安装新软件的方式来安装，各个市场重新更改这个有需要花费很大的工程）。mac下替换文件夹和windows上不一样，mac直接把源文件夹里的内容直接删除，经过几天各种找数据恢复无望的情况下（很痛苦），只能重新生成一个。旧用户无法直接更新，请先删除原应用，再安装（一定要开启自动备份，在安装才能保障数据安全）。\n
+        "
+		    android:layout_marginLeft="10dp"
+		    android:textSize="13sp"/>
+        
+        
+        <TextView 
+            android:id="@+id/tv_version"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/version"
+		    android:layout_marginLeft="10dp"
+		    android:textSize="13sp"/>
+    	<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="微信：asshole5"
+		    android:layout_marginLeft="10dp"
+		    android:textSize="13sp"/>
+        <TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="微博：罐子里的小蛐蛐"
+		    android:layout_marginLeft="10dp"
+		    android:textSize="13sp"/>
+        <TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="twitter：http://twitter.com/yanglx55"
+		    android:layout_marginLeft="10dp"
+		    android:textSize="13sp"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_list_divider"/>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="@android:color/darker_gray"
+        android:text="
+1.3.0更新：\n
+--去除广告(广告带来的结果是拿到两个差评，只能找个借口：谁动了我的账号乱发app)\n
+--修复从1.1.0505数据丢失的bug(具体原因还是不明，也许打包的时候不小心出错，一直测试没有问题。结果自己去下载的时候也出现丢失的情况。至于为什么要先卸载上面的告知用户里说明。因为只是个人开发，一个人无法这么点时间内做这么多事。)\n
+--另外从这个版本开始决定把这个软件的源代码贡献出去，给新手们做个参考，以弥补之前放广告和数据丢失得到的那些骂声。（真的很苦，开发这么久，国内十几个市场的注册，开发者身份认证，然后每个市场都要填一遍信息。然后可悲的是之前几天内出了好几个版本，结果只换来两个差评。后辈借鉴。）\n
+--源代码仅供参考，不可用于商业用途,源码地址：https://github.com/alpheus55/55finance\n
+
+1.2.0509更新：\n
+bug修改：\n
+--首页index页面点击列表标题栏闪退问题（很浅显的bug一直都没注意实在不好意思）\n
+--大部分手机圆饼图无法完整显示问题\n
+--设置页面列表不公正问题（作者用nexus5，从别人的手机中看到了各种不匹配，也向各位道个歉，之前只看着自己手机的样子）\n
+将要修改：\n
+软件锁不是很灵敏的问题\n
+\n
+1.2.0507更新：\n
+bug修改：\n
+--修改账单时，一条sql写错导致无法更新分类表\n
+细节优化：\n
+++添加账单详情页面不自动弹出软键盘\n
+用户体验有损点：
+给大家看看广告
+\n
+1.1.0505更新：\n
+功能:\n
+++添加自定义支出收入分类\n
+++添加软件密码锁功能\n
+++添加填写账单备注\n
+++修改备份可选，可删已备份文件\n
+++更多页面添加我的余额显示（没有具体银行卡余额功能）\n
+++添加当月分类显示饼图，点击可查看具体百分比\n
+bug修改：\n
+--部分手机切换月份时闪退问题\n
+--程序home键退出，一段时间重启软件崩溃问题\n
+--选择工资日进入两次，列表添加两次，选择后可能闪退问题\n
+--日历选中某日，切换月份时选中状态错误\n
+--切换日历后工资日不显示\n
+细节优化：\n
+++主页列表中，备注信息显示在原有标题和时间之间，没有则不显示\n
+++日历页面，月支出收入section栏由原有绿色改为黄色（别问我为什么- -，我觉得绿色不好）\n
+++右上角设置图标更换，进入设置界面切换动画添加\n
+++设置页面去掉赞助列，赞助列烦人没用是一方面，另一方面，本软件绝对不收费，个人应用非公司应用无利益可言，本来只做给自己使用。更多bug和反馈建议请直接微博或微信\n
+\n
+1.0.1更新：\n
+++应用名更换为55记账\n
+\n
+1.0：\n
+++首发版本\n
+"
+        android:padding="10dp"/>
+    </LinearLayout>
+	</ScrollView>
+</LinearLayout>
