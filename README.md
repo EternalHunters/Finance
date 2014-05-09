@@ -6,8 +6,8 @@ Finance
 应用下载地址：http://app.xiaomi.com/detail/60129
 
 用到的第三方library库
-> [flavienlaurent/datetimepicker](https://github.com/flavienlaurent/datetimepicker)
-> [johnkil/Android-AppMsg](https://github.com/johnkil/Android-AppMsg)
+> [flavienlaurent/datetimepicker](https://github.com/flavienlaurent/datetimepicker)\n
+> [johnkil/Android-AppMsg](https://github.com/johnkil/Android-AppMsg)\n
 > [beworker/pinned-section-listview](https://github.com/beworker/pinned-section-listview)
 > [Androguide/HoloGraphLibrary](https://github.com/Androguide/HoloGraphLibrary)
 > [ai212983/android-spinnerwheel](https://github.com/ai212983/android-spinnerwheel)
