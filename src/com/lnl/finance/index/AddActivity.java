@@ -1,6 +1,5 @@
 package com.lnl.finance.index;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -10,7 +9,6 @@ import android.view.View.OnClickListener;
 import android.widget.TextView;
 
 import com.lnl.finance.BaseActivity;
-import com.lnl.finance.MainActivity;
 import com.lnl.finance.MainNewActivity;
 import com.lnl.finance.R;
 import com.lnl.finance.util.AppUtil;
