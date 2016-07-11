@@ -12,13 +12,6 @@ import android.os.Bundle;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
-/**
- * GSON 工作类，它是用占位字符，反向来做的，如果用泛型从外面传类型过来，则会报错，因为JAVA的泛型是运行时擦除的<br />
- * 例如 public static <T> T str2json (String str) 这种写法，运行时就会出错<br />
- * 
- * @author crazy_cabbage
- * 
- */
 public class JsonUtil {
 	public static Map<String, Map<String, String[]>> json2Map(String json) {
 		if (StringUtil.isTrimBlank(json)) {
